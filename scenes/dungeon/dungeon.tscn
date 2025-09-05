@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ocg31jl7k1uk"]
+
+[ext_resource type="TileSet" uid="uid://bl7ryhyiu133c" path="res://scenes/tileset/tileset.tres" id="1_pf7w1"]
+[ext_resource type="Script" uid="uid://dnnius6hg6rvv" path="res://scenes/dungeon/dungeon.gd" id="1_sub6p"]
+
+[node name="Dungeon" type="Node2D"]
+script = ExtResource("1_sub6p")
+
+[node name="Terrain" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_pf7w1")
+
+[node name="Interactable" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_pf7w1")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://8aumd7qsw8t2"]
+
+[ext_resource type="Texture2D" uid="uid://dukdue4kq3ch4" path="res://scenes/tileset/colored-transparent_packed.png" id="1_rp718"]
+[ext_resource type="Script" uid="uid://boipd0ps53vau" path="res://scenes/player/player.gd" id="1_yewv4"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_yewv4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+texture = ExtResource("1_rp718")
+region_enabled = true
+region_rect = Rect2(496, 0, 16, 16)
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+metadata/_edit_lock_ = true
+
+[node name="TurnCooldown" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
