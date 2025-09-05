@@ -18,7 +18,7 @@ const TILES : Dictionary[TileTypes, Vector2] = {
 	TileTypes.APPLE : Vector2(33, 18),
 	TileTypes.ENEMY : Vector2(21, 7),
 }
-const CHUNK_SIZE := Vector2(10, 10)
+const CHUNK_SIZE := Vector2(20, 20)
 
 
 ## Procgen constants
